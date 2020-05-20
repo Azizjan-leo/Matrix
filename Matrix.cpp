@@ -28,7 +28,7 @@ void fill()
 void vectorCalc()
 {
 	for (int i = 0; i < 8; ++i)
-		vector += matrix[i][i];
+		vector += matrix[i][i] + matrix[i][8 - i - 1];
 }
 
 void funcCalc()
