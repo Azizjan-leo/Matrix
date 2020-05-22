@@ -8,6 +8,7 @@
 #include "Matrix.h"
 #include <cctype>
 #include <Windows.h>
+#include <iomanip>
 
 double matrix[8][8];
 const double eulerConstant = std::exp(1.0);
@@ -58,7 +59,7 @@ void print()
 	{
 		for (size_t j = 0; j < 8; j++)
 		{
-			std::cout << matrix[i][j] << ' ';
+			std::cout << std::setw(10) << std::left << matrix[i][j];
 		}
 		std::cout << std::endl;
 	}
