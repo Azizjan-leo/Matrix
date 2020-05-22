@@ -20,7 +20,7 @@ void fill()
 	{
 		for (size_t j = 0; j < 8; j++)
 		{
-			matrix[i][j] = pow(-1*(2,5/((3*j)+2)),i) + pow(eulerConstant,(cos(j)));
+			matrix[i][j] = pow(-1*(2.5/((3*j)+2)),i) + pow(eulerConstant,(cos(j)));
 		}
 	}
 }
